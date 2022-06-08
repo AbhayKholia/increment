@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid area 2</title>
+    <style>
+#container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px   ;
+    gap: 20px;
+    grid-template-areas: 
+    "bl bl pi  yl"
+    " re wh pi yl ";
+    
+    
+}
+#container > div{
+    font-size: 50px;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+#container > div:nth-child(1){
+    background-color: rgb(69, 64, 64);
+   grid-area: bl
+}
+
+
+#container > div:nth-child(3){
+    background-color:rgb(69, 64, 64);
+    grid-area: pi
+}
+#container > div:nth-child(4){
+    background-color: rgb(69, 64, 64);
+    grid-area: yl
+}
+#container > div:nth-child(5){
+    background-color: rgb(69, 64, 64);
+    grid-area: re
+}
+#container > div:nth-child(6){
+    background-color:rgb(69, 64, 64);
+    grid-area: wh
+}
+
+
+</style>
+</head>
+<body>
+    <div id="container">        <div>A</div>
+        <div></div>
+        <div>B</div>
+        <div>E</div>
+        <div>C</div>
+        <div>D</div>
+        <div></div>
+        <div></div>
+        <!-- <div>9</div> -->
+    </div>
+
+</body>
+</html>

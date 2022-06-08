@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#head{
+    /* border: 1px solid black; */
+    height: 200px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+
+}
+#head > h1{
+font-size: 50px;
+margin-top: -10px;
+}
+
+#head > p{
+margin-top: -15px;
+color: slategrey;
+}
+
+#box{
+    /* border: 1px solid black; */
+    height: 340px;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+#box > div{
+    height: 90%;
+    width: 30%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: rgb(255, 255, 255);
+border-radius: 10px;
+    margin: auto;
+    text-align: center;
+
+}
+#box > div:nth-child(1)> h1{
+    color: green;
+
+}
+#box > div:nth-child(2)> h1{
+    color: rgb(255, 157, 20);
+
+}
+#box > div:nth-child(1)> h1{
+    color: rgb(51, 24, 255);
+
+}
+#box >div > h1 + p {
+     margin-top: -20px;
+     font-style: italic;
+}
+p+p{
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+    color: slategrey;
+}
+p+button{
+    height: 40px;
+    width: 120px;
+    border-radius: 7px;
+    background-color: aliceblue;
+    font-size: 15px;
+    color: blue;
+    border: 2px solid blue;
+    font-weight: bold;
+    
+}
+button:hover{
+    color: rgb(255, 255, 255);
+    background-color: blue;
+
+}
+    </style>
+</head>
+<body>
+    <div id="head">
+        <h1>Choose A plan that right <br> for your bussines</h1>
+        <p>We collect reviews from our users so you can get an honest opinion of what an <br> experience with our website are really like! </p>
+    </div>
+    <div id="box">
+        <div>
+            <h2>Starter Plan</h2>
+            <h1>Free</h1>
+            <p>per month</p>
+            <p>We collection reviews from our <br> usere so you can get an honest <br>opinion of what an experience with our website .</p>
+            <button> Start Now</button>
+
+        </div>
+        <div><h2>Business Plan</h2>
+            <h1>$39.00</h1>
+            <p>per month</p>
+            <p>We collection reviews from our <br> usere so you can get an honest <br>opinion of what an experience with our website .</p>
+            <button> Start Now</button>
+        </div>
+        <div><h2>Premium Plan</h2>
+            <h1>$59.00</h1>
+            <p>per month</p>
+            <p>We collection reviews from our <br> usere so you can get an honest <br>opinion of what an experience with our website .</p>
+            <button> Start Now</button>
+        </div>
+    </div>
+</body>
+</html>
